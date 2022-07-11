@@ -11,7 +11,8 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
     />
     <!-- Styles -->
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <!--header-->
@@ -40,6 +41,9 @@
                       <li>
                         <a href="#tours" class="scroll-link">Our tools</a>
                       </li>
+                      <li>
+                        <a href="form.html" class="scroll-link">Login</a>
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -47,8 +51,8 @@
               <!-- banner -->
               <div class="banner">
                 <div class="container">
-                  <h1>Turn your idea into<br />a business</h1>
-                  <p>
+                  <h1 data-aos="fade-left" data-aos-duration="1500">Turn your idea into<br />a business</h1>
+                  <p data-aos="fade-right" data-aos-duration="2000">
                     We build web and mobile applications for companies to join the information era.
                   </p>
                   <!--<a href="#tours" class="scroll-link btn btn-white">explore tours</a>-->
@@ -56,9 +60,10 @@
               </div>
             </header>
             <!-- about -->
+            
             <section id="about" class="section">
-              <div class="title">
-                <h2>about <span>us</span></h2>
+              <div class="title" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                <h2 data-aos="fade-down" data-aos-delay="400" data-aos-duration="1000">about <span>us</span></h2>
                 <h4>Colaboro is a boutique software development agency,<br />powered by architects and engineers with many years of experience in the industry.
                     <br />
                     Leave the optimization of your processes to us and be prepared for the future.
@@ -69,36 +74,36 @@
             </section>
             <!-- services -->
             <section id="services" class="section">
-              <div class="title">
-                <h2>Companies&#x27;ve
+              <div class="title"   >
+                <h2 data-aos="flip-left" data-aos-duration="1500">Companies&#x27;ve
                     worked<span>with</span></h2>
                     <table>
                       <tr class="row">
                         <td>
                           <div id="grid">
-                            <div class="image">
-                              <img src="/img/customer-barkbus.png" alt="/">
+                            <div class="image" data-aos="flip-left" data-aos-duration="1500">
+                              <img src="./img/customer-barkbus.png" alt="/">
                             </div>
                           </div>
                         </td>
                         <td>
                           <div id="grid">
-                            <div class="image">
-                              <img src="/img/customer-e2comply.png" alt="/">
+                            <div class="image" data-aos="flip-left"data-aos-duration="1500">
+                              <img src="./img/customer-e2comply.png" alt="/">
                             </div>
                           </div>
                         </td>
                         <td>
                           <div id="grid">
-                            <div class="image">
-                              <img src="/img/customer-signhere.png" alt="/">
+                            <div class="image" data-aos="flip-left" data-aos-duration="1500">
+                              <img src="./img/customer-signhere.png" alt="/">
                             </div>
                           </div>
                         </td>
                         <td>
                           <div id="grid">
-                            <div class="image">
-                              <img src="/img/customer-ami.jpg" alt="/">
+                            <div class="image" data-aos="flip-left" data-aos-duration="1500">
+                              <img src="./img/customer-ami.jpg" alt="/">
                             </div>
                           </div>
                         </td>
@@ -128,6 +133,11 @@
     </header>
     <!--javascript-->
     <script src="/script.js"></script>
+    <!--animaciones-aos-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ <script>
+ AOS.init();
+ </script>
 </body>
 </html>
 

@@ -68,10 +68,11 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+ 
 }
 body {
   font-family: var(--ff-secondary);
-  background: var(--clr-grey-10);
+  
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
@@ -204,14 +205,15 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  background: var(--clr-white);
   box-shadow: var(--light-shadow);
   z-index: 100;
 }
 .fixed-nav .links a {
+  transition: 2s;
   color: var(--clr-grey-1);
 }
 .fixed-nav .links a:hover {
+  transition: 0.5s;
   color: var(--clr-secondary);
 }
 /* .fixed-nav .links-container {
@@ -296,6 +298,7 @@ nav {
     padding: 0;
   }
   .links a:hover {
+
     color: var(--clr-white);
   }
 }
@@ -304,12 +307,14 @@ header {
   min-height: 100vh;
   background: linear-gradient(rgba(45, 46, 46, 0.5), rgba(0, 0, 0, 0.7)),
     url(./hero-bcg.jpg) center/cover no-repeat;
+    
 }
 .banner {
   min-height: 100vh;
   display: grid;
   place-items: center;
   text-align: center;
+  position: relative;
 }
 .container h1 {
   color: var(--clr-white);
@@ -334,17 +339,26 @@ header {
 h4{
     text-align: center;
     text-transform: uppercase; 
+    padding-top: 25px;
+    margin-bottom: 5px;
 }
 .title span {
   color: var(--clr-secondary);
 }
-#about,
-#services,
-#tours {
-  height: 80vh;
+#about {
+  top: 50px;
+  margin-top: 104px;
+  padding-top: 105px;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 10px 10px 40px rgb(0, 0, 0);
+  border: 1ps solid #333;
+  border-radius: 25px;
 }
 #services {
   background: var(--clr-white);
+  margin-top: 100px;
+  
 }
 footer {
   background: var(--clr-grey-1);
