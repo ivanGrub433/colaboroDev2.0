@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ColaboroDev</title>
+    <link rel="icon" type="image/x-icon" href="/favicon-32x32.png">
     <!-- font-awesome -->
     <link
     rel="stylesheet"
@@ -117,6 +118,21 @@
                 <h2>Our <span>tools</span></h2>
               </div>
             </section>
+            <section id="form" class="section">
+              <div class="title">
+                <h2>Contact <span>US</span></h2>
+                <form name="form" action="" class="form">
+                  <label for="name">name <span>*</span></label>
+                  <input name="name" required type="text" id="name" placeholder="name">
+                  <label for="email">email <span>*</span></label>
+                  <input name="email" type="text" id="email" required placeholder="colaboro@example.com">
+                  <label for="message">message</label>
+                  <textarea id="message" name="message" id="" cols="30" rows="10"></textarea>
+                  <button type="submit" class="btn primary full">send message</button>
+                </form>
+                <a href="" id=""></a>
+              </div>
+            </section>
             <!-- footer -->
             <footer class="section">
                     <p>
@@ -133,6 +149,7 @@
     </header>
     <!--javascript-->
     <script src="/script.js"></script>
+    <script src="/mail.js"></script>
     <!--animaciones-aos-->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
  <script>
