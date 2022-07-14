@@ -1,4 +1,6 @@
 /*---Mail sender---*/
+const nodemailer = require("nodemailer");
+
 const $form = document.querySelector('form');
 
 $form.addEventListener('submit', handleSubmit);
@@ -7,22 +9,25 @@ function handleSubmit(event){
     event.preventDefault();
     const form = new FormData($form);
     console.log(form.get('name'));
-    /*
-    var nodemailer = require('nodemailer');
+    console.log(form.get('email'));
+    console.log(form.get('message'));
+
         exports.sendEmail = function(req, res){
                 var transporter = nodemailer.createTransport({
-                service: 'gmail',
+                host: "smtp.gmail.com",
+                port: 465,
+                secure: true, // true for 465, false for other ports
                 auth: {
-                user: 'youremail@gmail.com',
-                pass: 'yourpassword'
+                user: 'colaboroprueba@gmail.com',
+                pass: 'vcguxqdostztnwlt'
                 }
             });
             
             var mailOptions = {
-                from: 'youremail@gmail.com',
-                to: 'myfriend@yahoo.com',
-                subject: `form.`,
-                text: 'That was easy!'
+                from: 'colaboroprueba@gmail.com',
+                to: 'colaborodestino@gmail.com',
+                subject: `Cliente: ${form.name}, Email: ${form.email}`,
+                text: form.message
             };
             
             transporter.sendMail(mailOptions, function(error, info){
@@ -33,6 +38,4 @@ function handleSubmit(event){
                 }
             });
         };
-    */
 }
-

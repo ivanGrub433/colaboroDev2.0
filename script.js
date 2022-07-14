@@ -81,4 +81,3 @@ scrollLinks.forEach((link) => {
     linksContainer.style.height = 0;
   });
 });
-
