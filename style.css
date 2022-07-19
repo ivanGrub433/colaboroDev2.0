@@ -217,6 +217,12 @@ nav {
   transition: 0.5s;
   color: var(--clr-secondary);
 }
+
+.fixed-nav .logo {
+  transition: 5s;
+  filter: invert(10%);
+  color: var(--clr-grey-1);
+}
 /* .fixed-nav .links-container {
   height: auto !important;
 } */
@@ -239,6 +245,7 @@ nav {
 }
 .logo {
   height: 50px;
+  filter: invert(90%);
 }
 .links-container {
   height: 0;
@@ -307,7 +314,7 @@ nav {
 header {
   min-height: 100vh;
   background: linear-gradient(rgba(45, 46, 46, 0.5), rgba(0, 0, 0, 0.7)),
-    url(./hero-bcg.jpg) center/cover no-repeat;
+    url(./img/hero-new.png) center/cover no-repeat;
     
 }
 .banner {
