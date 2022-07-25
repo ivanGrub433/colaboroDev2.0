@@ -401,7 +401,8 @@ h4{
 }
 footer {
   background: var(--clr-grey-1);
-  padding: 5rem 1rem;
+  padding: 3rem 1rem;
+ 
 }
 footer p {
   color: var(--clr-black);
