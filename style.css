@@ -269,7 +269,7 @@ nav {
 .links a:hover {
   color: var(--clr-grey-1);
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   nav {
     background: transparent;
   }
@@ -308,6 +308,12 @@ nav {
   .links a:hover {
 
     color: var(--clr-white);
+  }
+}
+@media screen and (max-width:1000px) {
+  .logo {
+    height: 50px;
+    filter: invert(10%);
   }
 }
 /* hero */
@@ -605,4 +611,5 @@ textarea {
   .formText {
     width: 100%;
   }
+
 }
