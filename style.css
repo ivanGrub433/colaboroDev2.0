@@ -199,10 +199,13 @@ Scroll
 nav {
   background: var(--clr-white);
   padding: 1rem 1.5rem;
+
+
+  
 }
 /* fixed nav */
 .fixed-nav {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -216,6 +219,7 @@ nav {
 .fixed-nav .links a:hover {
   transition: 0.5s;
   color: var(--clr-secondary);
+  
 }
 
 .fixed-nav .logo {
@@ -230,6 +234,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+ 
   
 }
 .nav-toggle {
@@ -245,7 +250,7 @@ nav {
 }
 .logo {
   height: 50px;
-  filter: invert(90%);
+  
 }
 .links-container {
   height: 0;
@@ -270,6 +275,10 @@ nav {
   color: var(--clr-grey-1);
 }
 @media screen and (min-width: 800px) {
+  .logo {
+    width: 100%;
+    filter: invert(90%);
+  }
   nav {
     background: transparent;
   }
@@ -304,10 +313,11 @@ nav {
     margin: 0 1rem;
     font-weight: bold;
     padding: 0;
+    
   }
   .links a:hover {
 
-    color: var(--clr-white);
+    color: #808080;
   }
 }
 /* hero */
@@ -378,7 +388,7 @@ h4{
     margin-bottom: 5px;
 }
 .title span {
-  color: var(--clr-secondary);
+  color: #bebdbd;
 }
 #about {
   top: 50px;
@@ -386,9 +396,8 @@ h4{
   padding-top: 105px;
   text-align: center;
   overflow: hidden;
-  box-shadow: 10px 10px 40px rgb(0, 0, 0);
-  border: 1ps solid #333;
-  border-radius: 25px;
+  background-color: #808080;
+  
 
 }
 #services {
@@ -400,12 +409,12 @@ h4{
   
 }
 footer {
-  background: var(--clr-grey-1);
+  background: rgb(0, 0, 0);
   padding: 3rem 1rem;
  
 }
 footer p {
-  color: var(--clr-black);
+  color: rgb(255, 255, 255);
   text-align: center;
   text-transform: capitalize;
   letter-spacing: var(--spacing);
@@ -431,6 +440,96 @@ footer p {
 .show-link {
   visibility: visible;
   z-index: 100;
+}
+
+.socialNet {
+  list-style: none;
+  display: flex;
+  height: 10vh;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  
+}
+
+.socialNet ul {
+  display: flex;
+  z-index: 0;
+  
+}
+
+.socialNet ul li {
+  position: relative;
+  display: block;
+  color: #666;
+  font-size: 30px;
+  height: 60px;
+  width: 60px;
+  background: #171515;
+  line-height: 60px;
+  border-radius: 50%;
+  margin: 0 15px;
+  cursor: pointer;
+  top: 20px;
+  margin: 0 10px;
+ 
+}
+
+.socialNet ul li::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  /*background: #d35400; */
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  z-index: -1 ;
+  transform: scale(0.9);
+  transition: 0.5s;
+}
+.socialNet ul li:nth-child(1)::before {
+  background-color: #808080;
+}
+
+.socialNet ul li:hover::before{
+  
+  filter: blur(3px);
+  transform: scale(1.2);
+  /*box-shadow: 0 0 15px #d35400;*/
+}
+/*
+.socialNet ul li:nth-child(1)::before{
+  box-shadow: 0 0 15px #808080;
+}*/
+
+
+.socialNet ul li:nth-child(1):hover {
+  color: #e23670;
+  box-shadow: 0 0 15px #e23670;
+  text-shadow: 0 0 15px #e23670;
+  transition: 0.5s;
+}/*e23670*/
+
+
+
+
+
+
+
+.socialNet ul li:nth-child(2)::before {
+  background-color: #808080;
+}
+/*
+.socialNet ul li:nth-child(2)::before{
+  box-shadow: 0 0 15px #808080;
+}*/
+.socialNet ul li:nth-child(2):hover {
+  color: #2a6cbb;
+  box-shadow: 0 0 15px #2a6cbb;
+  text-shadow: 0 0 15px #2a6cbb;
+  transition: 0.5s;
 }
 
 /* companies images*/
@@ -526,12 +625,12 @@ footer p {
 
 
 #contactUs {
- 
+  background-color:#808080;
   background-repeat: no-repeat;
   background-size: 100vw 100vh;
-  box-shadow: 10px 10px 40px rgb(0, 0, 0);
-  border: 1ps solid #333;
-  border-radius: 25px;
+ 
+  
+  
   
   
   
@@ -548,7 +647,9 @@ footer p {
   max-width: 80%;
   max-height: 60%;
   margin: auto;
-  border-radius: 25px;
+  border-radius: 15px;
+  
+  
   
  
 
@@ -558,18 +659,18 @@ footer p {
 .formText {
  max-width: 700px;
  max-height: 1000px;
-  margin: auto;
-  
-  padding: 10px 20px;
-  box-sizing: border-box;
-  margin-top: 20px;
-  border-radius: 7px;
+ margin: 15px;
+ padding: 10px 20px;
+ box-sizing: border-box;
+ margin-top: 20px;
+ border-radius: 7px;
+ 
 
 }
 
 input, textarea {
   width: 100%;
-  margin-bottom: 20px;
+  margin: 10px;
   padding: 7px;
   box-sizing: border-box;
   font-size: 17px;
@@ -603,6 +704,8 @@ textarea {
 
 @media screen and (max-width:480px) {
   .formText {
-    width: 100%;
+    width: 90%;
   }
 }
+
+
