@@ -42,7 +42,7 @@ router.post('/send-email', async (req, res) => {
     console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
     // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
 
-    res.redirect('/index.html');
+    res.redirect('/index.html#contactUs');
 });
 
 module.exports = router;
