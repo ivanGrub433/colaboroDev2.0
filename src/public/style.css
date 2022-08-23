@@ -720,3 +720,12 @@ textarea {
     width: 90%;
   }
 }
+
+#map {
+  height: 250px;
+  margin: 50px;
+  margin-left: 60px;
+  margin-right: 60px;
+  padding: 10px;
+  z-index: 0;
+  }
