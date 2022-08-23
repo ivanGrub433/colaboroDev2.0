@@ -154,7 +154,7 @@ p {
   font-size: 0.875rem;
   border: 2px solid var(--clr-black);
   cursor: pointer;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  /*box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);*/
   border-radius: var(--radius);
 }
 .btn:hover {
@@ -468,14 +468,12 @@ footer p {
   text-align: center;
   align-items: center;
   justify-content: center;
-  background-color: #000000;
-  
+  background-color: #000000; 
 }
 
 .socialNet ul {
   display: flex;
   z-index: 0;
-  
 }
 
 .socialNet ul li {
@@ -492,7 +490,6 @@ footer p {
   cursor: pointer;
   top: 20px;
   margin: 0 10px;
- 
 }
 
 .socialNet ul li::before {
@@ -513,7 +510,6 @@ footer p {
 }
 
 .socialNet ul li:hover::before{
-  
   filter: blur(3px);
   transform: scale(1.2);
   /*box-shadow: 0 0 15px #d35400;*/
@@ -523,19 +519,12 @@ footer p {
   box-shadow: 0 0 15px #808080;
 }*/
 
-
 .socialNet ul li:nth-child(1):hover {
   color: #e23670;
   box-shadow: 0 0 15px #e23670;
   text-shadow: 0 0 15px #e23670;
   transition: 0.5s;
 }/*e23670*/
-
-
-
-
-
-
 
 .socialNet ul li:nth-child(2)::before {
   background-color: #8c8c8c;
@@ -573,8 +562,6 @@ footer p {
  flex-direction: row;
  justify-content: space-around;
  flex-flow: wrap;
-
- 
 }
 
 .imageItems {
@@ -591,7 +578,6 @@ footer p {
   -ms-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-  
 }
 
 .imageItems:hover {
@@ -605,7 +591,6 @@ footer p {
   -ms-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-
 }
 
 .imgSignhere {
@@ -614,14 +599,10 @@ footer p {
 
 .imgBarkbus {
   padding-top: 50%;
-
 }
 
 .imgE2comply {
- 
  padding: 40px;
- 
- 
 }
 
 .imgAmi {
@@ -632,14 +613,12 @@ footer p {
 .imageItems {
   width: 30%;
 }
-  
 }
 
 @media screen and (max-width:600px) {
 .imageItems {
   width: 90%;
 }
-  
 }
 
 
@@ -647,12 +626,6 @@ footer p {
   background-color:#f1f1f1;
   background-repeat: no-repeat;
   background-size: 100vw 100vh;
- 
-  
-  
-  
-  
-  
 }
 .flex-container {
   display: flex;
@@ -687,7 +660,6 @@ input, textarea {
   padding: 7px;
   box-sizing: border-box;
   font-size: 17px;
-
 }
 
 textarea {
@@ -704,9 +676,7 @@ textarea {
 
 #boton:hover {
   cursor: pointer;
-  
   overflow: hidden;
-  
 }
 
 .colorTitle {
@@ -728,4 +698,4 @@ textarea {
   margin-right: 60px;
   padding: 10px;
   z-index: 0;
-  }
+}
