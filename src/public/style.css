@@ -44,7 +44,7 @@ Variables
   --clr-green-light: hsl(125, 71%, 66%);
   --clr-secondary: rgb(97, 102, 102);
   --clr-black: rgb(0, 0, 0);
-  --ff-primary: "Gill Sans", sans-serif;
+  --ff-primary: "Arial", sans-serif;
   --ff-secondary: "Open Sans", sans-serif;
   --transition: all 0.3s linear;
   --spacing: 0.25rem;
@@ -699,4 +699,5 @@ textarea {
   margin-right: 60px;
   padding: 10px;
   z-index: 0;
+  
 }
