@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
     
 </head>
 <body>
@@ -61,7 +63,6 @@
                     We build web and mobile applications for companies to join the information era.</p>
                 </div>
               </div>
-            </header>
             <!--<a href="#tours" class="scroll-link btn btn-white">explore tours</a>-->
             <!-- about -->
             
@@ -118,20 +119,20 @@
               <div class="title">
                 <h2 class="colorTitle">Contact <span>US</span></h2>
               </div>  
-
+                <div id="map"></div>
                 <div class="flex-container">
                   <div> 
-                    <img src="img/image-contact.png" alt="/" data-aos="fade-right" data-aos-duration="1500">
+                    <img src="/img/image-contact.png" alt="/" data-aos="fade-right" data-aos-duration="1500">
                   </div>
                  <div>
-                   <form class="formText" name="form" action="/send-email" method="post" class="form">
-                  <label for="name"><span></span></label>
-                  <input name="name" required type="text" id="name" placeholder="*Name">
-                  <label for="email"><span></span></label>
-                  <input name="email" type="text" id="email" required placeholder="* colaboro@example.com">
-                  <label for="message"></label>
-                  <textarea id="message" name="message" cols="30" rows="10" placeholder="Send your message"></textarea>
-                  <button id="boton" type="submit" class="btn primary full">send message</button>
+                    <form class="formText" name="form" action="/send-email" method="post" class="form">
+                    <label for="name"><span></span></label>
+                    <input name="name" required type="text" id="name" placeholder="*Name">
+                    <label for="email"><span></span></label>
+                    <input name="email" type="text" id="email" required placeholder="* colaboro@example.com">
+                    <label for="message"></label>
+                    <textarea id="message" name="message" cols="30" rows="10" placeholder="Send your message"></textarea>
+                    <button id="boton" type="submit" class="btn primary full">send message</button>
                  </div>
                
                 </div>
@@ -141,8 +142,8 @@
             <!-- footer -->
             <footer class="section">
                     <p>
-                      Locations Rosario, Argentina<br>
-                      Contact us sales@colaboro.dev<br>
+                      Location Rosario, Argentina<br>
+                      sales@colaboro.dev<br>
                       <span id="date"></span>
                     </p>
 
@@ -169,4 +170,3 @@
  </script>
 </body>
 </html>
-

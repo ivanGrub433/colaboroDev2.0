@@ -81,3 +81,13 @@ scrollLinks.forEach((link) => {
     linksContainer.style.height = 0;
   });
 });
+
+var map = L.map('map').setView([-32.97676824360544, -60.644480972324274], 15);
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+L.marker([-32.97676824360544, -60.644480972324274]).addTo(map)
+    .bindPopup('San Martín 3396, Rosario <br> Santa Fe, Argentina')
+    .openPopup();
