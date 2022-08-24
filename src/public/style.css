@@ -44,7 +44,7 @@ Variables
   --clr-green-light: hsl(125, 71%, 66%);
   --clr-secondary: rgb(97, 102, 102);
   --clr-black: rgb(0, 0, 0);
-  --ff-primary: "Roboto", sans-serif;
+  --ff-primary: "Arial", sans-serif;
   --ff-secondary: "Open Sans", sans-serif;
   --transition: all 0.3s linear;
   --spacing: 0.25rem;
@@ -94,8 +94,7 @@ h1,
 h2,
 h3,
 h4 {
-  letter-spacing: var(--spacing);
-  text-transform: capitalize;
+  
   line-height: 1.25;
   margin-bottom: 0.75rem;
   font-family: var(--ff-primary);
