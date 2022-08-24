@@ -505,9 +505,7 @@ footer p {
   transform: scale(0.9);
   transition: 0.5s;
 }
-.socialNet ul li:nth-child(1)::before {
-  background-color: #8c8c8c;
-}
+
 
 .socialNet ul li:hover::before{
   filter: blur(3px);
@@ -526,9 +524,7 @@ footer p {
   transition: 0.5s;
 }/*e23670*/
 
-.socialNet ul li:nth-child(2)::before {
-  background-color: #8c8c8c;
-}
+
 /*
 .socialNet ul li:nth-child(2)::before{
   box-shadow: 0 0 15px #808080;
@@ -556,12 +552,16 @@ footer p {
 
 
 .companies {
- width: 100%;
+ 
  height: auto;
  display: flex;
  flex-direction: row;
  justify-content: space-around;
  flex-flow: wrap;
+ margin: 50px;
+ margin-left: 60px;
+ margin-right: 60px;
+ padding: 10px;
 }
 
 .imageItems {
@@ -647,11 +647,13 @@ footer p {
  max-width: 700px;
  max-height: 1000px;
  margin: 15px;
- padding: 10px 20px;
+ padding: 20px 30px;
  box-sizing: border-box;
  margin-top: 20px;
  border-radius: 7px;
  flex-grow: 2;
+ border: solid 1px #ffff;
+ 
 }
 
 input, textarea {
@@ -660,6 +662,7 @@ input, textarea {
   padding: 7px;
   box-sizing: border-box;
   font-size: 17px;
+  border: none;
 }
 
 textarea {
@@ -672,6 +675,7 @@ textarea {
   background: #31384a;
   color: #fff;
   padding: 20px;
+  border: none;
 }
 
 #boton:hover {
@@ -698,4 +702,5 @@ textarea {
   margin-right: 60px;
   padding: 10px;
   z-index: 0;
+  
 }
