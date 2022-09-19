@@ -94,10 +94,9 @@ h1,
 h2,
 h3,
 h4 {
-  
   line-height: 1.25;
   margin-bottom: 0.75rem;
-  font-family: var(--ff-primary);
+  font-family: var(--ff-secondary);
 }
 h1 {
   font-size: 3rem;
@@ -128,7 +127,7 @@ p {
     font-size: 1.75rem;
   }
   h4 {
-    font-size: 1rem;
+    font-size: 1.10rem;
   }
   body {
     font-size: 1rem;
@@ -137,7 +136,7 @@ p {
   h2,
   h3,
   h4 {
-    line-height: 1;
+    line-height: 1.1;
   }
 }
 /*  global classes */
@@ -319,7 +318,7 @@ nav {
 }
 /* hero */
 header {
-  height: 800px;
+  height: 100vh;
   background: linear-gradient(rgba(45, 46, 46, 0.5), rgba(0, 0, 0, 0.7)),
     url(./img/hero-bcg.jpg) center/cover no-repeat;
     
@@ -329,7 +328,7 @@ header {
   min-height: 100vh;
  align-items: center;
   display: flex;
- justify-content: space-around;
+ justify-content: center;
  flex-flow: wrap;
  position: relative;
  top: 50px;
@@ -340,13 +339,33 @@ header {
   
   
 }
+.imagenVector {
+  width: 400px !important;
+  height: 400px;
+}
 
+@media(max-width:1115px) {
+  .imagenVector {
+    position: relative;
+    bottom: 100px;
+  }
+}
+
+
+@media(max-width:400px) {
+  .imagenVector {
+    display: none;
+  }
+}
 .container {
   text-align: center;
   justify-content: center;
   
   position: relative;
   top: 15px;
+  z-index: 1;
+  
+  
 }
 
 .container h1 {
@@ -376,9 +395,7 @@ header {
     max-width: 40rem;
   }
 
-  .banner img {
-    display: none;
-  }
+  
   .banner {
     display: flex;
     text-align: center;
@@ -394,7 +411,6 @@ header {
 }
 h4{
     text-align: center;
-    text-transform: uppercase; 
     padding-top: 25px;
      margin: 10px 15px;
 }
